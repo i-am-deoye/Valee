@@ -12,7 +12,7 @@
 		A63B43AC22BBC8C300CFFD1B /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B43AB22BBC8C300CFFD1B /* Regex.swift */; };
 		A63B43AE22BBC8E700CFFD1B /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B43AD22BBC8E700CFFD1B /* Rule.swift */; };
 		A63B43B022BBC96300CFFD1B /* Valee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B43AF22BBC96300CFFD1B /* Valee.swift */; };
-		A648FDA322BC1303009CC369 /* Valee.h in Headers */ = {isa = PBXBuildFile; fileRef = A63B434F22B931E600CFFD1B /* Valee.h */; };
+		A648FDC822BC170E009CC369 /* Valee.h in Headers */ = {isa = PBXBuildFile; fileRef = A63B434F22B931E600CFFD1B /* Valee.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +110,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A648FDA322BC1303009CC369 /* Valee.h in Headers */,
+				A648FDC822BC170E009CC369 /* Valee.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
