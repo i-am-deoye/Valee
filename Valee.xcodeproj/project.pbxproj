@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		A63B435622B931E700CFFD1B /* Valee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63B434C22B931E600CFFD1B /* Valee.framework */; };
 		A63B435B22B931E700CFFD1B /* ValeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B435A22B931E700CFFD1B /* ValeeTests.swift */; };
-		A63B435D22B931E700CFFD1B /* Valee.h in Headers */ = {isa = PBXBuildFile; fileRef = A63B434F22B931E600CFFD1B /* Valee.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A63B43AC22BBC8C300CFFD1B /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B43AB22BBC8C300CFFD1B /* Regex.swift */; };
 		A63B43AE22BBC8E700CFFD1B /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B43AD22BBC8E700CFFD1B /* Rule.swift */; };
 		A63B43B022BBC96300CFFD1B /* Valee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B43AF22BBC96300CFFD1B /* Valee.swift */; };
+		A648FDA322BC1303009CC369 /* Valee.h in Headers */ = {isa = PBXBuildFile; fileRef = A63B434F22B931E600CFFD1B /* Valee.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +110,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A63B435D22B931E700CFFD1B /* Valee.h in Headers */,
+				A648FDA322BC1303009CC369 /* Valee.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +372,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Valee/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,6 +400,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Valee/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
