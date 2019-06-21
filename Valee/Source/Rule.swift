@@ -25,7 +25,6 @@ public enum Rule  {
         }
         
         guard checkPrimitiveness(guardValue) else {
-            //fatalError("value is neither primitive nor validatable type")
             return false
         }
         
