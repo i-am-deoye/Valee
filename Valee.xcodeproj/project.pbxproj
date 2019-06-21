@@ -35,6 +35,10 @@
 		A63B43AB22BBC8C300CFFD1B /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		A63B43AD22BBC8E700CFFD1B /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		A63B43AF22BBC96300CFFD1B /* Valee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valee.swift; sourceTree = "<group>"; };
+		A648FDD822BCF6A5009CC369 /* nnnn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nnnn.h; sourceTree = "<group>"; };
+		A648FDD922BCF6A5009CC369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A648FDE322BCF6A5009CC369 /* nnnnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nnnnTests.swift; sourceTree = "<group>"; };
+		A648FDE522BCF6A5009CC369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			children = (
 				A63B434E22B931E600CFFD1B /* Valee */,
 				A63B435922B931E700CFFD1B /* ValeeTests */,
+				A648FDD722BCF6A5009CC369 /* nnnn */,
+				A648FDE222BCF6A5009CC369 /* nnnnTests */,
 				A63B434D22B931E600CFFD1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +107,24 @@
 				A63B43AF22BBC96300CFFD1B /* Valee.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		A648FDD722BCF6A5009CC369 /* nnnn */ = {
+			isa = PBXGroup;
+			children = (
+				A648FDD822BCF6A5009CC369 /* nnnn.h */,
+				A648FDD922BCF6A5009CC369 /* Info.plist */,
+			);
+			path = nnnn;
+			sourceTree = "<group>";
+		};
+		A648FDE222BCF6A5009CC369 /* nnnnTests */ = {
+			isa = PBXGroup;
+			children = (
+				A648FDE322BCF6A5009CC369 /* nnnnTests.swift */,
+				A648FDE522BCF6A5009CC369 /* Info.plist */,
+			);
+			path = nnnnTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -347,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
