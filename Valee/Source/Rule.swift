@@ -16,7 +16,7 @@ public enum Rule  {
     case email
     case card
     
-    func validate(_ value: Any?, customRegex: CustomRegex?=nil) -> Bool {
+    public func validate(_ value: Any?, customRegex: CustomRegex?=nil) -> Bool {
         
         guard let guardValue = value else { return false }
         

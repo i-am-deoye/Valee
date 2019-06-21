@@ -8,14 +8,13 @@
 
 import Foundation
 
-typealias MAX_AMOUNT = Double
-typealias CustomRegex = String
-enum Regex : String {
+public typealias CustomRegex = String
+public enum Regex : String {
     case phone = "^[0-9+]{0,1}+[0-9]{5,16}$"
     case email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 }
 
-enum CardRegex : String {
+public enum CardRegex : String {
     case amex = "^3[47][0-9]{13}$"
     case bcGlobal = "^(6541|6556)[0-9]{12}$"
     case carteBlanche = "^389[0-9]{11}$"
@@ -38,31 +37,30 @@ enum CardRegex : String {
     }
 }
 
-var AMOUNT_LIMIT_MAX : Double = 100_000.00
-var AMOUNT_LIMI_MIN : Double = 0.1_0
-
+public var AMOUNT_LIMIT_MAX : Double = 100_000.00
+public var AMOUNT_LIMI_MIN : Double = 0.1_0
 
 public struct ValidateUtils {
-    static func required(_ value: String) -> Bool {
+    public static func required(_ value: String) -> Bool {
         return !value.replacingOccurrences(of: " ", with: "").isEmpty || (Double(value) ?? 0) > 0
     }
     
-    static func card(_ value: String) -> Bool {
+    public static func card(_ value: String) -> Bool {
         let values = CardRegex.regexes().filter({ NSPredicate(format: "SELF MATCHES %@", $0.rawValue).evaluate(with: value) })
         return !values.isEmpty
     }
     
-    static func email(_ value: String) -> Bool {
+    public static func email(_ value: String) -> Bool {
         let test = NSPredicate(format: "SELF MATCHES %@", Regex.email.rawValue)
         return test.evaluate(with: value)
     }
     
-    static func phone(_ value: String) -> Bool {
+    public static func phone(_ value: String) -> Bool {
         let test = NSPredicate(format: "SELF MATCHES %@", Regex.phone.rawValue)
         return test.evaluate(with: value)
     }
     
-    static func amount(_ value: String) -> Bool {
+    public static func amount(_ value: String) -> Bool {
         guard let amountValue = Double(value) else { return false }
         guard amountValue > AMOUNT_LIMI_MIN else { return false }
         guard amountValue < AMOUNT_LIMIT_MAX else { return false }

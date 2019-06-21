@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
           s.source              = { :git => "https://github.com/i-am-deoye/Valee.git", :tag => "0.0.4" }
           #9.
           s.source_files     = "Valee", "JojoCore/**/*.{h,m,swift}"
-          s.swift_version = '4.2'
+          s.swift_version = '5'
     end

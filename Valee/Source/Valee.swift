@@ -10,7 +10,7 @@ import Foundation
 
 
 public struct RegisterValues {
-    struct Registry {
+    public struct Registry {
         let rules : [[Rule:CustomRegex?]]
         let value : Any?
         
@@ -26,7 +26,7 @@ public struct RegisterValues {
     }
     
     
-    let values : [Registry]
+    public let values : [Registry]
 }
 
 public protocol Validatable {
