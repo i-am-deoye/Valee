@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
           #1.
           s.name               = "Valee"
           #2.
-          s.version            = "0.0.4"
+          s.version            = "0.0.5"
           #3.  
           s.summary         = "'Valee' framework"
           #4.
