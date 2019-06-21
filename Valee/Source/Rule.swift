@@ -25,7 +25,7 @@ public enum Rule  {
         }
         
         guard checkPrimitiveness(guardValue) else {
-            assert(false, "value is neither primitive nor validatable type")
+            fatalError("value is neither primitive nor validatable type")
         }
         
         let stringValue = "\(guardValue)"
