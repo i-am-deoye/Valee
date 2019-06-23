@@ -11,8 +11,8 @@ import Foundation
 
 public struct RegisterValues {
     public struct Registry {
-        let rules : [[Rule:CustomRegex?]]
-        let value : Any?
+        public let rules : [[Rule:CustomRegex?]]
+        public let value : Any?
         
         func validate() -> Bool {
             let count = rules.filter({ (object) in
