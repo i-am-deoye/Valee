@@ -14,6 +14,11 @@ public struct RegisterValues {
         public let rules : [[Rule:CustomRegex?]]
         public let value : Any?
         
+       public init(_ rules: [[Rule:CustomRegex?]], value: Any?) {
+            self.rules = rules
+            self.value = value
+        }
+        
         func validate() -> Bool {
             let count = rules.filter({ (object) in
                 let rule = object.keys.first!
@@ -27,6 +32,9 @@ public struct RegisterValues {
     
     
     public let values : [Registry]
+    public init(_ values : [Registry]) {
+        self.values = values
+    }
 }
 
 public protocol Validatable {
