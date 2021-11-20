@@ -38,7 +38,7 @@ public enum CardRegex : String {
 }
 
 public var AMOUNT_LIMIT_MAX : Double = 10_000_000.00
-public var AMOUNT_LIMI_MIN : Double = 0.1_0
+public var AMOUNT_LIMI_MIN : Double = 0.000
 
 public struct ValidateUtils {
     public static func required(_ value: String) -> Bool {
