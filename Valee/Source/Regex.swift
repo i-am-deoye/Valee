@@ -37,7 +37,7 @@ public enum CardRegex : String {
     }
 }
 
-public var AMOUNT_LIMIT_MAX : Double = 100_000.00
+public var AMOUNT_LIMIT_MAX : Double = 10_000_000.00
 public var AMOUNT_LIMI_MIN : Double = 0.1_0
 
 public struct ValidateUtils {
